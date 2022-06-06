@@ -11,11 +11,9 @@ namespace CompAndDel.Pipes
         protected IFilter filtro;
         protected IPipe nextPipe;
         
-        /// <summary>
-        /// La cañería recibe una imagen, le aplica un filtro y la envía a la siguiente cañería
-        /// </summary>
-        /// <param name="filtro">Filtro que se debe aplicar sobre la imagen</param>
-        /// <param name="nextPipe">Siguiente cañería</param>
+
+        // La cañería recibe una imagen, le aplica un filtro y la envía a la siguiente cañería
+ 
         public PipeSerial(IFilter filtro, IPipe nextPipe)
         {
             this.nextPipe = nextPipe;
